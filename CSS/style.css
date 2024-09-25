@@ -211,11 +211,13 @@ header.active{
 }
 .circle img{
     position: absolute;
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    
+
 
 }
 .circle.bg img{
@@ -370,4 +372,30 @@ header.active{
     to {
         transform: rotateZ(360deg);
     }
+}
+
+
+/*  Sections General */
+section{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+    bottom: 0;
+    background: #ffffff;
+    transition: ease-in-out 1s;
+    transform-origin: bottom;
+    z-index: 1100;
+    opacity: 0;
+}
+section::-webkit-scrollbar{
+    display: none;
+}
+section.section-show{
+    padding: 150px 100px 100px;
+    top: 0;
+    height: auto;
+    min-height:100vh;
+    overflow-y: visible;
+    opacity: 1;
 }

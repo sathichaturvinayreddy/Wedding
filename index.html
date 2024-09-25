@@ -14,9 +14,9 @@
             <a href="/" class="logo">Wedding</a>
             <a href="#" class="menu"><ion-icon name="menu"></ion-icon></a>
             <ul class="nav">
-                <li><a class="nav-btn active" href="/"><ion-icon name="home-outline"></ion-icon></a></li>
+                <li><a class="nav-btn active" href="/" onclick="resetHeader();"><ion-icon name="home-outline"></ion-icon></a></li>
                 <li><a class="nav-btn" href="#" data-target="about"> about</a></li>
-                <li><a class="nav-btn" href="#" data-target="service">services</a></li>
+                <li><a class="nav-btn" href="#" data-target="services">services</a></li>
                 <li><a class="nav-btn" href="#" data-target="portfolio">portfolio</a></li>
                 <li><a class="nav-btn" href="#" data-target="contact">contact</a></li>
 
@@ -37,11 +37,11 @@
 
                 </div>
                 <div class="circle bg">
-                    <img src="./images/wedding-1.jpeg" alt="" />
+                    <img src="./images/wedding-1.jpg" alt="" />
                     <div class="circle large">
-                        <img src="./images/wedding-1.jpeg" alt="" />
+                        <img src="./images/wedding-1.jpg" alt="" />
                         <div class="circle small">
-                            <img src="./images/wedding-1.jpeg" alt="" />
+                            <img src="./images/wedding-1.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -54,11 +54,11 @@
 
                 </div>
                 <div class="circle bg">
-                    <img src="https://lh3.googleusercontent.com/proxy/5coZO2GLE7mmxe9vd4MSb1xw4xN6GQcxQSOnUEIQ5jhCnt0B7n4V0-izLWX-61QknHOLe56MIDzS8y4DWSPB0MuLibi7odGyr_Z5M9svg-GXt66u0YXtiOhP6n7rsnCpuDKHUpiT0yjY6992y0EuAQ" alt="" />
+                    <img src="./images/wedding-2.jpg" alt="" />
                     <div class="circle large">
-                        <img src="https://lh3.googleusercontent.com/proxy/5coZO2GLE7mmxe9vd4MSb1xw4xN6GQcxQSOnUEIQ5jhCnt0B7n4V0-izLWX-61QknHOLe56MIDzS8y4DWSPB0MuLibi7odGyr_Z5M9svg-GXt66u0YXtiOhP6n7rsnCpuDKHUpiT0yjY6992y0EuAQ" alt="" />
+                        <img src="./images/wedding-2.jpg" alt="" />
                         <div class="circle small">
-                            <img src="https://lh3.googleusercontent.com/proxy/5coZO2GLE7mmxe9vd4MSb1xw4xN6GQcxQSOnUEIQ5jhCnt0B7n4V0-izLWX-61QknHOLe56MIDzS8y4DWSPB0MuLibi7odGyr_Z5M9svg-GXt66u0YXtiOhP6n7rsnCpuDKHUpiT0yjY6992y0EuAQ" alt="" />
+                            <img src="./images/wedding-2.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -71,11 +71,11 @@
 
                 </div>
                 <div class="circle bg">
-                    <img src="./images/wedding-3.jpeg" alt="" />
+                    <img src="./images/wedding-3.jpg" alt="" />
                     <div class="circle large">
-                        <img src="./images/wedding-3.jpeg" alt="" />
+                        <img src="./images/wedding-3.jpg" alt="" />
                         <div class="circle small">
-                            <img src="./images/wedding-3.jpeg" alt="" />
+                            <img src="./images/wedding-3.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -108,23 +108,26 @@
                         </textpath>
                     </text>
                 </svg>
-                <a href="#" class="move-down">
+                <a href="#" class="move-down" onclick="initNavigation();">
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </a>
             </div>
         </div>
+        <!-- ************MAIN********************-->
 
         <!-- About Section-->
-        <div id="about" class="about"></div>
+        <section id="about" class="about"></section>
 
         <!--- Services Section-->
-        <div id="services" class="services"></div>
+        <section id="services" class="services"></section>
 
         <!-- Portfolio Section -->
-        <div id="portfolio" class="portfolio"></div>
+        <section id="portfolio" class="portfolio"></section>
 
         <!-- Contact Section  -->
-        <div id="contact" class="contact"></div>
+        <section id="contact" class="contact"></section>
+
+        <!--  ***********MAIN END ********************-->
         <!-- JavaScript Vendors-->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
